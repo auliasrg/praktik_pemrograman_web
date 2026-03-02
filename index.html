@@ -1,117 +1,115 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>biodata</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum Minggu 3 - Layout</title>
+  <link rel="stylesheet" href="stylr.css">
 </head>
 <body>
-    <header>
-        <h1>BIODATA PRIBADI</h1>
-        <hr>
-    </header>
+  
+  <!-- ── NAVBAR ─────────────────────── -->
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <span class="logo-icon">&#9670;</span>
+      <span class="logo-text">DevStudio</span>
+    </div>
 
-    <!-- FOTO PROFIL -->
-    <h2>Foto Profil</h2>
-    <img src="aulia.jpeg" alt="Foto Profil Saya" width="200" height="200">
-
-    <!-- BIODATA -->
-    <h2> Tentang Saya</h2>
-    <p>
-        Halo! Perkenalkan nama saya <strong>Aulia Ramadhani Siregar</strong>. Saya lahir di 
-        Tarutung pada tanggal <strong>17 September 2006</strong>. Saat ini saya adalah
-        mahasiswa jurusan <strong>Sistem Informasi</strong> di Universitas Muhammadiyah 
-        Sumatera Utara.
-        
-    </p>
-    <p>
-        Saya memiliki ketertarikan yang besar dalam bidang teknologi, 
-        terutama <em>web development</em>, <em>cyber security</em> dan <em>artificial intelligence</em>. 
-        Saya selalu bersemangat untuk belajar hal-hal baru yang bisa mengembangkan 
-        keterampilan saya.
-    </p>
-
-    <!-- DATA PRIBADI -->
-    <h2> Data Pribadi</h2>
-    <ul>
-        <li><strong>Nama Lengkap:</strong>  Aulia Ramadhani Siregar</li>
-        <li><strong>Tempat, Tanggal Lahir:</strong>  Tarutung, 17 September 2006</li>
-        <li><strong>Alamat:</strong> Jl. Ar Hakim No.6a</li>
-        <li><strong>Status:</strong> Belum Menikah</li>
-        <li><strong>Agama:</strong> Islam</li>
-        <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+    <ul class="navbar__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <!-- HOBI -->
-    <h2> Hobi & Minat</h2>
-    <ul>
-        <li>Programming dan design</li>
-        <li>Melukis</li>
-        <li>Baking </li>
-        <li>mendengarkan musik</li>
-        <li>belajar hal baru yang bermanfaat</li>
+    <div class="navbar__cta">
+      <a href="#" class="btn-primary">Hire Me</a>
+    </div>
+  </nav>
+  <!-- ── HERO SECTION ────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <span class="hero__badge">Available for Work</span>
+      <h1 class="hero__title">
+        Hi, saya <span class="highlight">Nama Kamu</span><br>
+        Web Developer
+      </h1>
+      <p class="hero__desc">
+        Saya membangun website yang cepat, responsif, dan tampak profesional.
+        Mari buat sesuatu yang luar biasa bersama.
+      </p>
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="about">
+    <div class="container">
+      <h2 class="section-title">Keahlian Saya</h2>
+      <p class="section-subtitle">Teknologi yang saya kuasai</p>
 
-    </ul>
+      <div class="skills__grid">
 
-    <!-- PENDIDIKAN -->
-    <h2> Riwayat Pendidikan</h2>
-    <ol>
-        <li>
-            <strong>SD negeri 060816</strong> (2012 - 2018)<br>
-            Lulus dengan nilai rata-rata 8.5
-        </li>
-        <li>
-            <strong>MTSN Tapanuli Utara</strong> (2018 - 2021)<br>
-            Lulus dengan nilai rata-rata 9.0
-        </li>
-        <li>
-            <strong>Man Tapanuli Utara</strong> (2021 - 2024)<br>
-            Jurusan IPA, lulus dengan nilai rata-rata 9.7
-        </li>
-        <li>
-            <strong>Universitas Muhammadiyah Sumatera Utara</strong> (2024 - Sekarang)<br>
-            Jurusan Sistem Informasi, 
-        </li>
-    </ol>
+        <div class="skill-card">
+          <div class="skill-card__icon">&#128195;</div><!-- ── SKILLS SECTION ──────────────── -->
 
-    <!-- KETERAMPILAN -->
-    <h2> Keterampilan</h2>
-    <ul>
-        <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python, Java</li>
-        <li><strong>Database:</strong> MySQL, MongoDB, PostgreSQL</li>
-        <li><strong>Tools:</strong> Git, VS Code, Docker, Linux</li>
-        <li><strong>Languages:</strong> Indonesia (Native), English (Advanced)</li>
+          <h3>HTML5</h3>
+          <p>Semantic markup, aksesibilitas, dan struktur dokumen yang baik.</p>
+        </div>
 
-    </ul>
-    
-    <!-- KONTAK -->
-    <h2> Kontak Saya</h2>
-    <ul>
-        <li>
-            <strong>Email:</strong> 
-            <a href="mailto:auliarmdhnisrg@gmail.com" target="_blank">auliarmdhnisrg@gmail.com</a>
-        </li>
-        <li>
-            <strong>Telepon:</strong> 
-            <a href="+62 896-6922-4340" target="_blank">+62 896-6922-4340</a>
-        </li>
-    </ul>
+        <div class="skill-card">
+          <div class="skill-card__icon">&#127912;</div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, animasi, dan responsive design untuk semua layar.</p>
+        </div>
+<div class="skill-card">
+          <div class="skill-card__icon">&#9889;</div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, Fetch API, dan logika interaktif modern.</p>
+        </div>
 
+        <div class="skill-card">
+          <div class="skill-card__icon">&#128279;</div>
+          <h3>Git & GitHub</h3>
+          <p>Version control, branching, dan kolaborasi tim secara profesional.</p>
+        </div>
 
-    <!-- SOSIAL MEDIA -->
-    <h2> Social Media</h2>
-    <p>
-        <a href="https://instagram.com/auliarmdhnisrg" target="_blank">Instagram</a> 
-    </p>
+        <div class="skill-card">
+          <div class="skill-card__icon">&#9881;</div>
+          <h3>React</h3>
+          <p>Component-based development dengan hooks dan state management.</p>
+        </div>
 
+        <div class="skill-card">
+          <div class="skill-card__icon">&#128640;</div>
+          <h3>Performance</h3>
+          <p>Optimasi loading, image compression, dan Core Web Vitals.</p>
+        </div>
 
-    <!-- FOOTER -->
-    <hr>
-    <footer>
-        <p>
-            &copy; 2026 Aulia Ramadhani Siregar. All rights reserved.<br>
-            
+      </div>
+    </div>
+  </section>
+<!-- ── FOOTER ──────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">&#9670; DevStudio</span>
+        <p class="footer__copy">
+          &copy; 2025 Nama Kamu. Dibuat dengan HTML & CSS murni.
         </p>
-    </footer>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
 </body>
 </html>
